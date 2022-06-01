@@ -7,7 +7,9 @@
     "preview": "vite preview --port 5050"
   },
   "dependencies": {
+    "@splidejs/vue-splide": "^0.6.6",
     "pinia": "^2.0.13",
+    "tw-elements": "^1.0.0-alpha12",
     "vue": "^3.2.33",
     "vue-router": "^4.0.14"
   },
