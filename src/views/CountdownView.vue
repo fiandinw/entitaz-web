@@ -1,6 +1,7 @@
 <script setup>
   import LogoEntitaz from "../assets/logo-entitaz.png";
   import undraw from "../assets/undraw_my_universe_803e.svg";
+  import workspacesvg from "../assets/workspace_SVG.svg";
   import bookssvg from "../assets/Books_SVG.svg";
   const grandOpenUnix = 1655510400000;
   const date = new Date();
@@ -10,9 +11,12 @@
 </script>
 
 <template>
-  <div class="bg-gradient-to-tr from-[#5E8F68] to-primary w-screen h-screen flex flex-col lg:flex-row items-center justify-center gap-24">
+  <div class="bg-gradient-to-tr from-[#5E8F68] to-primary w-screen h-screen flex flex-col lg:flex-row items-center justify-evenly">
+    <div class="hidden lg:block w-[300px]">
+      <img class="-scale-x-100" :src="workspacesvg" alt="undraw1" />
+    </div>
     <div
-      class="text-white flex flex-col items-center justify-center gap-4"
+      class="shrink-0 text-white flex flex-col items-center justify-center gap-4"
     >
       <div class="relative">
         <div class="absolute w-48 h-48">
@@ -46,7 +50,7 @@
       </div>
     </div>
 
-    <div class="hidden lg:block w-[400px]">
+    <div class="hidden lg:block w-[300px]">
       <img :src="bookssvg" alt="undraw" />
     </div>
   </div>
