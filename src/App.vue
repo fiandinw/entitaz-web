@@ -5,7 +5,7 @@
 </script>
 
 <template>
-  <div v-if="!['/countdown', '/'].includes(this.route.path)">
+  <div v-if="!['/countdown', '/'].includes($route.path)">
     <Navbar />
     <div class="mt-16 mb-14">
       <RouterView />
