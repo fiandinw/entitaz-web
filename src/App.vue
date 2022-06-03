@@ -1,13 +1,19 @@
 <script setup>
-import { RouterView } from 'vue-router'
-import Navbar from './components/Navbar.vue';
-import Footer from './components/Footer.vue';
+  import { RouterView } from "vue-router";
+  import Navbar from "./components/Navbar.vue";
+  import Footer from "./components/Footer.vue";
 </script>
 
 <template>
-  <Navbar />
-  <div class="mt-14 mb-14">
+  <div v-if="!['/countdown', '/'].includes(this.$route.path)">
+    <Navbar />
+    <div class="mt-16 mb-14">
+      <RouterView />
+    </div>
+    <Footer />
+  </div>
+
+  <div v-else>
     <RouterView />
   </div>
-  <Footer />
 </template>
