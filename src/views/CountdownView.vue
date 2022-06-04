@@ -11,12 +11,14 @@
 </script>
 
 <template>
-  <div class="bg-gradient-to-tr from-[#5E8F68] to-primary w-screen h-screen flex flex-col lg:flex-row items-center justify-evenly">
-    <div class="hidden lg:block w-[300px]">
+  <div
+    class="bg-gradient-to-tr from-[#5E8F68] to-primary w-screen h-screen flex flex-col lg:flex-row items-center justify-evenly"
+  >
+    <!-- <div class="hidden lg:block w-[300px]">
       <img class="-scale-x-100" :src="workspacesvg" alt="undraw1" />
-    </div>
+    </div> -->
     <div
-      class="shrink-0 text-white flex flex-col items-center justify-center gap-4"
+      class="shrink-0 text-white flex flex-col items-center lg:items-start justify-center gap-4"
     >
       <div class="relative">
         <div class="absolute w-48 h-48">
@@ -31,12 +33,26 @@
       </div>
       <div class="text-2xl font-bold">Connecting your dream to reality</div>
       <vue-countdown
-        class="font-semibold"
+        class="font-semibold flex flex-row gap-8"
         :time="toGrandOpenUnix"
         v-slot="{ days, hours, minutes, seconds }"
       >
-        {{ days }} days {{ hours }} hours {{ minutes }} minutes
-        {{ seconds }} seconds
+        <div class="text-center lg:text-left">
+          <div>{{ days }}</div>
+          <div>days</div>
+        </div>
+        <div class="text-center lg:text-left">
+          <div>{{ hours }}</div>
+          <div>hours</div>
+        </div>
+        <div class="text-center lg:text-left">
+          <div>{{ minutes }}</div>
+          <div>minutes</div>
+        </div>
+        <div class="text-center lg:text-left">
+          <div>{{ seconds }}</div>
+          <div>seconds</div>
+        </div>
       </vue-countdown>
       <div>
         <div class="flex space-x-2 justify-center mt-8">
