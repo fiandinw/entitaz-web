@@ -1,8 +1,7 @@
 <script setup>
   import LogoEntitaz from "../assets/logo-entitaz.png";
-  import undraw from "../assets/undraw_my_universe_803e.svg";
-  import workspacesvg from "../assets/workspace_SVG.svg";
   import bookssvg from "../assets/Books_SVG.svg";
+  import { RouterLink } from "vue-router";
   const grandOpenUnix = 1655510400000;
   const date = new Date();
   const d = date.getTime();
@@ -63,6 +62,10 @@
             JOIN US
           </button>
         </div>
+      </div>
+      <div class="mt-12 flex flex-row gap-4 lg:fixed lg:bottom-4 lg:left-0 lg:w-screen lg:justify-center">
+        <RouterLink to="/home" class="border-b-2 hover:bg-white hover:text-[#5E8F68] p-2 transition-all rounded-t-lg cursor-pointer"><i class="fa fa-home fa-2x" aria-hidden="true"></i></RouterLink>
+        <div class="border-b-2 hover:bg-white hover:text-[#5E8F68] p-2 transition-all rounded-t-lg cursor-pointer"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></div>
       </div>
     </div>
 
