@@ -11,7 +11,7 @@
 
 <template>
   <div
-    class="bg-gradient-to-tr from-[#5E8F68] to-primary w-screen h-screen flex flex-col lg:flex-row items-center justify-evenly"
+    class="bg-gradient-to-tr from-secondary to-primary w-screen h-screen flex flex-col lg:flex-row items-center justify-evenly"
   >
     <!-- <div class="hidden lg:block w-[300px]">
       <img class="-scale-x-100" :src="workspacesvg" alt="undraw1" />
@@ -21,7 +21,7 @@
     >
       <div class="relative">
         <div class="absolute w-48 h-48">
-          <img class="" :src="LogoEntitaz" alt="" />
+          <img class="" :src="LogoEntitaz" alt="logo" />
         </div>
         <div
           class="spinner-border animate-spin inline-block w-48 h-48 border-4 rounded-full text-white"

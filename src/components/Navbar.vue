@@ -1,6 +1,9 @@
+<script setup>
+import LogoEntitaz from "../assets/logo-entitaz.png";
+</script>
 <template>
   <nav
-    class="fixed w-full top-0 flex flex-wrap items-center justify-between py-4 bg-gray-100 text-gray-500 hover:text-gray-700 focus:text-gray-700 shadow-lg navbar navbar-expand-lg navbar-light"
+    class="fixed w-full top-0 flex flex-wrap items-center justify-between py-1 bg-gray-100 text-gray-500 hover:text-gray-700 focus:text-gray-700 shadow-lg navbar navbar-expand-lg navbar-light z-50"
   >
     <div
       class="container-fluid w-full flex flex-wrap items-center justify-between px-6"
@@ -39,9 +42,10 @@
           href="#"
         >
           <img
-            src="https://mdbootstrap.com/img/logo/mdb-transaprent-noshadows.png"
-            style="height: 15px"
-            alt=""
+            class="bg-primary rounded-full"
+            :src="LogoEntitaz"
+            style="height: 30px"
+            alt="logo"
             loading="lazy"
           />
         </a>
@@ -74,7 +78,7 @@
       <!-- Collapsible wrapper -->
 
       <!-- Right elements -->
-      <div class="flex items-center relative">
+      <div v-if="$route.path != '/home'" class="flex items-center relative">
         <!-- Icon -->
         <a
           class="text-gray-500 hover:text-gray-700 focus:text-gray-700 mr-4"
@@ -126,7 +130,7 @@
             >
           </a>
           <ul
-            class="dropdown-menu min-w-max absolute hidden bg-white text-base z-50 float-left py-2 list-none text-left rounded-lg shadow-lg mt-1 hidden m-0 bg-clip-padding border-none left-auto right-0"
+            class="dropdown-menu min-w-max absolute bg-white text-base z-50 float-left py-2 list-none text-left rounded-lg shadow-lg mt-1 hidden m-0 bg-clip-padding border-none left-auto right-0"
             aria-labelledby="dropdownMenuButton1"
           >
             <li>
