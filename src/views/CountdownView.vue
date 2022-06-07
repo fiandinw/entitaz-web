@@ -2,14 +2,38 @@
   import LogoEntitaz from "../assets/logo-entitaz.png";
   import bookssvg from "../assets/Books_SVG.svg";
   import { RouterLink } from "vue-router";
+  import gsap from "gsap";
+  import { onMounted, onUnmounted, ref } from "vue";
+
   const grandOpenUnix = 1655510400000;
   const date = new Date();
   const d = date.getTime();
   const toGrandOpenUnix = grandOpenUnix - d;
   console.log(date);
+
+  const cover = ref(null)
+
+    setTimeout(() => {
+      gsap.to("#cover", {
+        duration: 0.2,
+        opacity: 0,
+      });
+    }, 2000);
+  onMounted(() => {
+    setTimeout(() => {
+      cover.value.style.display = "none";
+    }, 2300)
+  });
 </script>
 
 <template>
+  <div
+    id="cover"
+    ref="cover"
+    class="absolute w-screen h-screen flex items-center justify-center bg-primary z-50"
+  >
+    <img class="animate-pulse" :src="LogoEntitaz" alt="logo" />
+  </div>
   <div
     class="bg-gradient-to-tr from-secondary to-primary w-screen h-screen flex flex-col lg:flex-row items-center justify-evenly"
   >
@@ -63,9 +87,20 @@
           </button>
         </div>
       </div>
-      <div class="mt-12 flex flex-row gap-4 lg:fixed lg:bottom-4 lg:left-0 lg:w-screen lg:justify-center">
-        <RouterLink to="/home" class="border-b-2 hover:bg-white hover:text-[#5E8F68] p-2 transition-all rounded-t-lg cursor-pointer"><i class="fa fa-home fa-2x" aria-hidden="true"></i></RouterLink>
-        <a href="https://instagram.com/entitaz.id" target="_blank" class="border-b-2 hover:bg-white hover:text-[#5E8F68] p-2 transition-all rounded-t-lg cursor-pointer"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+      <div
+        class="mt-12 flex flex-row gap-4 lg:fixed lg:bottom-4 lg:left-0 lg:w-screen lg:justify-center"
+      >
+        <RouterLink
+          to="/home"
+          class="border-b-2 hover:bg-white hover:text-[#5E8F68] p-2 transition-all rounded-t-lg cursor-pointer"
+          ><i class="fa fa-home fa-2x" aria-hidden="true"></i
+        ></RouterLink>
+        <a
+          href="https://instagram.com/entitaz.id"
+          target="_blank"
+          class="border-b-2 hover:bg-white hover:text-[#5E8F68] p-2 transition-all rounded-t-lg cursor-pointer"
+          ><i class="fa fa-instagram fa-2x" aria-hidden="true"></i
+        ></a>
       </div>
     </div>
 
