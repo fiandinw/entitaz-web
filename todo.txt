@@ -1,0 +1,16 @@
+cover view
+	vector buku ganti foto bersama
+		minta ke nabila
+	sub judul (dibawah connecting...) kalau lagi ngajak
+		we were getting ready
+		(intern) ready to be "entitaz generation
+		we will present to you something amazing
+	tombol homepage ke landing sembunyiin dulu atau tambah keterangan
+
+landing
+	title hero diganti 
+		now connected
+	we assist
+		diganti about
+	faq
+		diganti data data

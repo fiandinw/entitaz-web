@@ -263,7 +263,7 @@
       <a
         class="text-gray-600 font-semibold"
         href="https://tailwind-elements.com/"
-        >Tailwind Elements</a
+        >Entitaz</a
       >
     </div>
   </footer>
