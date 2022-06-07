@@ -65,7 +65,7 @@
       </div>
       <div class="mt-12 flex flex-row gap-4 lg:fixed lg:bottom-4 lg:left-0 lg:w-screen lg:justify-center">
         <RouterLink to="/home" class="border-b-2 hover:bg-white hover:text-[#5E8F68] p-2 transition-all rounded-t-lg cursor-pointer"><i class="fa fa-home fa-2x" aria-hidden="true"></i></RouterLink>
-        <div class="border-b-2 hover:bg-white hover:text-[#5E8F68] p-2 transition-all rounded-t-lg cursor-pointer"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></div>
+        <a href="https://instagram.com/entitaz.id" target="_blank" class="border-b-2 hover:bg-white hover:text-[#5E8F68] p-2 transition-all rounded-t-lg cursor-pointer"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
       </div>
     </div>
 

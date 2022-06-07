@@ -51,25 +51,25 @@ import LogoEntitaz from "../assets/logo-entitaz.png";
         </a>
         <!-- Left links -->
         <ul class="navbar-nav flex flex-col pl-0 list-style-none mr-auto">
-          <li class="nav-item p-2">
+          <!-- <li class="nav-item p-2">
             <a
               class="nav-link text-gray-500 hover:text-gray-700 focus:text-gray-700 p-0"
               href="#"
               >Dashboard</a
             >
-          </li>
+          </li> -->
           <li class="nav-item p-2">
             <a
               class="nav-link text-gray-500 hover:text-gray-700 focus:text-gray-700 p-0"
-              href="#"
+              href="#team"
               >Team</a
             >
           </li>
           <li class="nav-item p-2">
             <a
               class="nav-link text-gray-500 hover:text-gray-700 focus:text-gray-700 p-0"
-              href="#"
-              >Projects</a
+              href="#articles"
+              >Articles</a
             >
           </li>
         </ul>

@@ -3,7 +3,9 @@
   import AOS from "aos";
   import "aos/dist/aos.css";
   import { onMounted } from "vue";
+  import { RouterLink } from "vue-router";
   import TeamCard from "../components/TeamCard.vue";
+  import ScrollUpButton from "../components/ScrollUpButton.vue";
 
   AOS.init({
     offset: 200,
@@ -12,6 +14,7 @@
 </script>
 
 <template>
+  <ScrollUpButton />
   <!-- <div
     class="bg-primary text-white py-20 pb-0 px-6 flex flex-col items-center justify-center"
   >
@@ -63,13 +66,14 @@
                 Connecting Your Dream
                 <span class="text-primary">To Reality.</span>
               </h1>
-              <a
+              <RouterLink
+                to="/"
                 class="inline-block px-7 py-3 mb-2 md:mb-0 md:mr-2 bg-primary text-white font-medium text-sm leading-snug uppercase rounded shadow-md hover:bg-primary-dark hover:shadow-lg focus:bg-primary-dark focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
                 data-mdb-ripple="true"
                 data-mdb-ripple-color="light"
                 href="#!"
                 role="button"
-                >Get started</a
+                >Get started</RouterLink
               >
               <a
                 class="inline-block px-7 py-3 bg-transparent text-primary font-medium text-sm leading-snug uppercase rounded hover:text-secobg-primary-dark hover:bg-gray-100 focus:bg-gray-100 focus:outline-none focus:ring-0 active:bg-gray-200 transition duration-150 ease-in-out"
@@ -298,7 +302,7 @@
   </div>
   <!-- Container for demo purpose -->
 
-  <div class="container my-24 px-6 mx-auto">
+  <div id="team" class="container my-24 px-6 mx-auto">
     <!-- Section: Design Block -->
     <section class="mb-32 text-gray-800 text-center">
       <div
@@ -404,7 +408,7 @@
         Latest <span class="text-primary">Articles & Events</span>
       </div>
 
-      <div class="grid lg:grid-cols-3 gap-6 xl:gap-x-12">
+      <div id="articles" class="grid lg:grid-cols-3 gap-6 xl:gap-x-12">
         <div class="mb-6 lg:mb-0" data-aos="flip-up">
           <div class="relative block bg-white rounded-lg shadow-lg">
             <div class="flex">
