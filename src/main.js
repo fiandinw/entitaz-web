@@ -2,7 +2,6 @@ import { createApp } from 'vue'
 import { createPinia } from 'pinia'
 import './index.css'
 import 'tw-elements';
-import '@splidejs/vue-splide/css';
 import VueCountdown from '@chenfengyuan/vue-countdown';
 
 import App from './App.vue'
