@@ -77,8 +77,9 @@
           <div>seconds</div>
         </div>
       </vue-countdown>
+      <div class="text-lg font-base mt-6">Ready to be Entitaz generation?</div>
       <div>
-        <div class="flex space-x-2 justify-center mt-8">
+        <div class="flex space-x-2 justify-center mt-0">
           <button
             type="button"
             class="inline-block px-6 py-2.5 border-white border-2 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-black hover:bg-opacity-10 hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out"
