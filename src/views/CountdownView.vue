@@ -1,6 +1,7 @@
 <script setup>
   import LogoEntitaz from "../assets/logo-entitaz.png";
   import bookssvg from "../assets/Books_SVG.svg";
+  import guild from "../assets/guild.png";
   import { RouterLink } from "vue-router";
   import gsap from "gsap";
   import { onMounted, onUnmounted, ref } from "vue";
@@ -11,18 +12,18 @@
   const toGrandOpenUnix = grandOpenUnix - d;
   console.log(date);
 
-  const cover = ref(null)
+  const cover = ref(null);
 
-    setTimeout(() => {
-      gsap.to("#cover", {
-        duration: 0.2,
-        opacity: 0,
-      });
-    }, 2000);
+  setTimeout(() => {
+    gsap.to("#cover", {
+      duration: 0.2,
+      opacity: 0,
+    });
+  }, 2000);
   onMounted(() => {
     setTimeout(() => {
       cover.value.style.display = "none";
-    }, 2300)
+    }, 2300);
   });
 </script>
 
@@ -77,24 +78,33 @@
           <div>seconds</div>
         </div>
       </vue-countdown>
-      <div class="text-lg font-base mt-6">Ready to be Entitaz generation?</div>
+      <div class="font-base mt-4 text-sm">Ready to be Entitaz generation?</div>
       <div>
-        <div class="flex space-x-2 justify-center mt-0">
-          <button
-            type="button"
-            class="inline-block px-6 py-2.5 border-white border-2 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-black hover:bg-opacity-10 hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out"
+        <div
+          class="flex space-x-2 justify-center mt-0 hover:scale-110 transition-all duration-150"
+        >
+          <a
+            href="https://bit.ly/tumbuhbarengentitaz"
+            target="_blank"
+            class="inline-block px-6 py-2.5 border-white border-2 text-white font-bold text-sm leading-tight uppercase rounded shadow-md hover:bg-black hover:bg-opacity-10 hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out"
           >
-            JOIN US
-          </button>
+            JOIN US!
+          </a>
         </div>
       </div>
       <div
-        class="mt-12 flex flex-row gap-4 lg:fixed lg:bottom-4 lg:left-0 lg:w-screen lg:justify-center"
+        class="flex flex-row gap-4 fixed bottom-4 left-0 w-screen justify-center"
       >
         <RouterLink
           to="/home"
-          class="border-b-2 hover:bg-white hover:text-[#5E8F68] p-2 transition-all rounded-t-lg cursor-pointer"
-          ><i class="fa fa-home fa-2x" aria-hidden="true"></i
+          class="border-b-2 p-2 transition-all rounded-t-lg cursor-pointer relative"
+        >
+          <div
+            class="absolute -top-8 w-fit text-center text-xs left-0 animate-bounce"
+          >
+            Comming Soon!
+          </div>
+          <i class="fa fa-home fa-2x" aria-hidden="true"></i
         ></RouterLink>
         <a
           href="https://instagram.com/entitaz.id"
@@ -105,8 +115,18 @@
       </div>
     </div>
 
-    <div class="hidden lg:block w-[300px]">
+    <!-- <div class="hidden lg:block w-[300px]">
       <img :src="bookssvg" alt="undraw" />
+    </div> -->
+    <div
+      class="hidden lg:block w-[400px] border-2 border-white rounded-3xl px-4 relative overflow-hidden hover:scale-110 transition-all duration-200"
+    >
+      <img
+        class="absolute w-full h-full object-cover top-0 left-0 opacity-0 hover:opacity-100 bg-primary bg-opacity-25 transition-all duration-300"
+        :src="LogoEntitaz"
+        alt="logo"
+      />
+      <img class="" :src="guild" alt="undraw" />
     </div>
   </div>
 </template>
