@@ -127,9 +127,16 @@
         alt="logo"
       /> -->
       <div
+        href="https://bit.ly/tumbuhbarengentitaz"
+        target="_blank"
         class="absolute w-full h-full top-0 left-0 flex items-center justify-center text-4xl text-white font-extrabold bg-primary bg-opacity-60 opacity-0 hover:opacity-100 transition-all duration-300"
       >
-        WE WANT YOU!
+        <a
+          class="hover:scale-125 transition-all duration-150"
+          href="https://bit.ly/tumbuhbarengentitaz"
+          target="_blank"
+          >WE WANT YOU!</a
+        >
       </div>
       <img class="" :src="guild" alt="undraw" />
     </div>
