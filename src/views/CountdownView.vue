@@ -121,11 +121,16 @@
     <div
       class="hidden lg:block w-[400px] border-2 border-white rounded-3xl px-4 relative overflow-hidden hover:scale-110 transition-all duration-200"
     >
-      <img
+      <!-- <img
         class="absolute w-full h-full object-cover top-0 left-0 opacity-0 hover:opacity-100 bg-primary bg-opacity-25 transition-all duration-300"
         :src="LogoEntitaz"
         alt="logo"
-      />
+      /> -->
+      <div
+        class="absolute w-full h-full top-0 left-0 flex items-center justify-center text-4xl text-white font-extrabold bg-primary bg-opacity-60 opacity-0 hover:opacity-100 transition-all duration-300"
+      >
+        WE WANT YOU!
+      </div>
       <img class="" :src="guild" alt="undraw" />
     </div>
   </div>
