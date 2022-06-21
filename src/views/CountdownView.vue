@@ -56,7 +56,7 @@
         </div>
       </div>
       <div class="text-2xl font-bold">Connecting your dream to reality</div>
-      <vue-countdown
+      <!-- <vue-countdown
         class="font-semibold flex flex-row gap-8"
         :time="toGrandOpenUnix"
         v-slot="{ days, hours, minutes, seconds }"
@@ -91,7 +91,7 @@
             JOIN US!
           </a>
         </div>
-      </div>
+      </div> -->
       <div
         class="flex flex-row gap-4 fixed bottom-4 left-0 w-screen justify-center"
       >
@@ -126,7 +126,7 @@
         :src="LogoEntitaz"
         alt="logo"
       /> -->
-      <div
+      <!-- <div
         href="https://bit.ly/tumbuhbarengentitaz"
         target="_blank"
         class="absolute w-full h-full top-0 left-0 flex items-center justify-center text-4xl text-white font-extrabold bg-primary bg-opacity-60 opacity-0 hover:opacity-100 transition-all duration-300"
@@ -137,7 +137,7 @@
           target="_blank"
           >WE WANT YOU!</a
         >
-      </div>
+      </div> -->
       <img class="" :src="guild" alt="undraw" />
     </div>
   </div>

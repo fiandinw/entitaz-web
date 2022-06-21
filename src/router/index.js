@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import CountdownView from '../views/CountdownView.vue'
+import CommingSoonView from '../views/CommingSoonView.vue'
 import ErrorView from '../views/ErrorView.vue'
 
 const router = createRouter({
@@ -15,6 +16,11 @@ const router = createRouter({
       path: '/',
       name: 'countdown',
       component: CountdownView
+    },
+    {
+      path: '/soon',
+      name: 'commingsoon',
+      component: CommingSoonView
     },
     {
       path: '/:pathMatch(.*)*',
