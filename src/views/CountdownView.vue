@@ -5,6 +5,7 @@
   import { RouterLink } from "vue-router";
   import gsap from "gsap";
   import { onMounted, onUnmounted, ref } from "vue";
+  import { Icon } from "@iconify/vue";
 
   const grandOpenUnix = 1655510400000;
   const date = new Date();
@@ -56,6 +57,9 @@
         </div>
       </div>
       <div class="text-2xl font-bold">Connecting your dream to reality</div>
+      <div>
+        <!-- <Icon icon="mdi-light:home" class="text-8xl text-secondary" /> -->
+      </div>
       <!-- <vue-countdown
         class="font-semibold flex flex-row gap-8"
         :time="toGrandOpenUnix"
@@ -99,11 +103,11 @@
           to="/home"
           class="border-b-2 p-2 transition-all rounded-t-lg cursor-pointer relative"
         >
-          <div
+          <!-- <div
             class="absolute -top-8 w-fit text-center text-xs left-0 animate-bounce"
           >
             Comming Soon!
-          </div>
+          </div> -->
           <i class="fa fa-home fa-2x" aria-hidden="true"></i
         ></RouterLink>
         <a

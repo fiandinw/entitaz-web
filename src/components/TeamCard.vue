@@ -1,13 +1,24 @@
+<script setup>
+  defineProps({
+    name: { default: "Udin Jaelani" },
+    role: { default: "role" },
+    img: { default: "" },
+  });
+</script>
 <template>
   <div class="mb-12 lg:mb-0">
-    <img
-      class="rounded-lg shadow-lg mb-6 mx-auto"
-      src="https://picsum.photos/200"
-      alt="avatar"
-      style="width: 150px"
-    />
-    <h5 class="text-lg font-bold mb-4">Udin Jaelani</h5>
-    <p class="mb-6">Role</p>
+    <div
+      class="rounded-lg shadow-lg mb-6 mx-auto w-[150px] h-[150px] overflow-hidden"
+    >
+      <img
+        class="object-cover w-72 h-72"
+        :src="$props.img"
+        alt="avatar"
+        width="150"
+      />
+    </div>
+    <h5 class="text-lg font-bold mb-4 capitalize">{{ $props.name }}</h5>
+    <p class="mb-6">{{ $props.role }}</p>
     <ul class="list-inside flex mx-auto justify-center">
       <a href="#!" class="px-2">
         <svg

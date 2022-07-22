@@ -7,6 +7,17 @@
   import TeamCard from "../components/TeamCard.vue";
   import ScrollUpButton from "../components/ScrollUpButton.vue";
 
+  import syarifah from "../assets/members/syarifah.png";
+  import rizky from "../assets/members/rizky.png";
+  import ari from "../assets/members/ari.png";
+  import nurul from "../assets/members/nurul.png";
+  import wahyu from "../assets/members/wahyu.png";
+  import annisa from "../assets/members/annisa.png";
+  import alifiandi from "../assets/members/alifiandi.png";
+  import farhan from "../assets/members/farhan.png";
+  import dzulya from "../assets/members/dzulya.png";
+  import nabila from "../assets/members/nabila.png";
+
   AOS.init({
     offset: 200,
     duration: 500,
@@ -71,7 +82,7 @@
                 class="inline-block px-7 py-3 mb-2 md:mb-0 md:mr-2 bg-primary text-white font-medium text-sm leading-snug uppercase rounded shadow-md hover:bg-primary-dark hover:shadow-lg focus:bg-primary-dark focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
                 data-mdb-ripple="true"
                 data-mdb-ripple-color="light"
-                href="#!"
+                href=""
                 role="button"
                 >Get started</RouterLink
               >
@@ -270,9 +281,11 @@
                 dunia yang semakin kompetitif.
               </p>
 
-              <div class="grid lg:gap-x-12 md:grid-cols-3">
+              <!-- <div class="grid lg:gap-x-12 md:grid-cols-3">
                 <div class="mb-12 md:mb-0">
-                  <h2 class="text-3xl font-bold text-primary mb-4">85%</h2>
+                  <h2 class="text-3xl font-bold text-primary mb-4">
+                    Apa Tujuan Besarnya?
+                  </h2>
                   <h5 class="text-lg font-medium text-gray-500 mb-0">
                     Pekerjaan yang akan ada pada 2030 belum ada pada tahun 2021
                   </h5>
@@ -292,7 +305,7 @@
                     Projects
                   </h5>
                 </div>
-              </div>
+              </div> -->
             </div>
           </div>
         </div>
@@ -314,16 +327,61 @@
       <div
         class="mt-8 grid md:grid-cols-2 gap-y-16 lg:grid-cols-4 gap-x-6 lg:gap-xl-12"
       >
-        <TeamCard data-aos="fade-up" />
-        <TeamCard data-aos="fade-up" />
-        <TeamCard data-aos="fade-up" />
-        <TeamCard data-aos="fade-up" />
-        <TeamCard data-aos="fade-up" />
-        <TeamCard data-aos="fade-up" />
-        <TeamCard data-aos="fade-up" />
-        <TeamCard data-aos="fade-up" />
-        <TeamCard data-aos="fade-up" />
-        <TeamCard data-aos="fade-up" />
+        <TeamCard
+          data-aos="fade-up"
+          name="Rizky"
+          role="Founder / CEO"
+          :img="rizky"
+        />
+        <TeamCard
+          data-aos="fade-up"
+          name="Syarifah"
+          role="VP People and Culture"
+          :img="syarifah"
+        />
+        <TeamCard data-aos="fade-up" name="ari" role="Agile Lead" :img="ari" />
+        <TeamCard
+          data-aos="fade-up"
+          name="nurul"
+          role="Chief Program Office"
+          :img="nurul"
+        />
+        <TeamCard
+          data-aos="fade-up"
+          name="wahyu"
+          role="VP Program"
+          :img="wahyu"
+        />
+        <TeamCard
+          data-aos="fade-up"
+          name="annisa"
+          role="VP Academy"
+          :img="annisa"
+        />
+        <TeamCard
+          data-aos="fade-up"
+          name="alifiandi"
+          role="Chief Technology Officer"
+          :img="alifiandi"
+        />
+        <TeamCard
+          data-aos="fade-up"
+          name="farhan"
+          role="Chief Marketing Officer"
+          :img="farhan"
+        />
+        <TeamCard
+          data-aos="fade-up"
+          name="dzulya"
+          role="VP Growth and Partnership"
+          :img="dzulya"
+        />
+        <TeamCard
+          data-aos="fade-up"
+          name="nabila"
+          role="VP Communication"
+          :img="nabila"
+        />
       </div>
     </section>
     <!-- Section: Design Block -->
@@ -336,61 +394,50 @@
         <!-- <h2 class="text-3xl font-bold mb-12 text-left border-b-4 w-fit border-primary">
           Frequently asked <span class="text-primary">questions</span>
         </h2> -->
+        <p class="mb-8 text-gray-500 text-4xl">
+          <u>Dunia kerja</u> berubah dengan kecepatan yang belum pernah terjadi
+          sebelumnya.
+        </p>
         <div class="grid lg:grid-cols-3 gap-6">
           <div class="mb-12">
-            <p class="font-bold mb-4">Anim pariatur cliche reprehenderit?</p>
-            <p class="text-gray-500">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt
-              autem numquam dolore molestias aperiam culpa alias veritatis
-              architecto eos, molestiae vitae ex eligendi libero eveniet
-              dolorem, doloremque rem aliquid perferendis.
+            <p class="font-bold mb-4 text-6xl">85%</p>
+            <p class="text-gray-500 text-2xl">
+              Pekerjaan yang akan ada pada 2030 belum ada pada tahun 2021.
             </p>
           </div>
           <div class="mb-12">
-            <p class="font-bold mb-4">Non cupidatat skateboard dolor brunch?</p>
-            <p class="text-gray-500">
-              Distinctio corporis, iure facere ducimus quos consectetur ipsa ut
-              magnam autem doloremque ex! Id, sequi. Voluptatum magnam sed fugit
-              iusto minus et suscipit? Minima sunt at nulla tenetur, numquam
-              unde quod modi magnam ab deserunt ipsam sint aliquid dolores
-              libero repellendus cupiditate mollitia quidem dolorem odit
+            <p class="font-bold mb-4 text-6xl">73%</p>
+            <p class="text-gray-500 text-2xl">
+              Mahasiswa sarjana bekerja di bidang yang tidak berkaitan dengan
+              jurusannya.
             </p>
           </div>
           <div class="mb-12">
-            <p class="font-bold mb-4">
-              Praesentium voluptatibus temporibus consequatur non aspernatur?
-            </p>
-            <p class="text-gray-500">
-              Minima sunt at nulla tenetur, numquam unde quod modi magnam ab
-              deserunt ipsam sint aliquid dolores libero repellendus cupiditate
-              mollitia quidem dolorem.
+            <p class="font-bold mb-4 text-6xl">!</p>
+            <p class="text-gray-500 text-2xl">
+              Riset menunjukan bahwa pelajar yang mendapatkan konsultasi karir
+              sewaktu studi memiliki pendapatan yang lebih tinggi secara
+              signifikan di usia dewasa.
             </p>
           </div>
           <div class="col-md-12 mb-12">
-            <p class="font-bold mb-4">
-              Voluptatum magnam sed fugit iusto minus et suscipit?
-            </p>
-            <p class="text-gray-500">
-              Laudantium perferendis, est alias iure ut veniam suscipit dolorem
-              fugit. Et ipsam corporis earum ea ut quae cum non iusto blanditiis
-              ipsum dolor eius reiciendis, velit adipisci quas.
+            <p class="font-bold mb-4 text-6xl">66%</p>
+            <p class="text-gray-500 text-2xl">
+              Mahasiswa berpendapat kemampuan akademis tidak cukup untuk
+              mempersiapkan diri masuk ke dunia kerja.
             </p>
           </div>
           <div class="mb-12">
-            <p class="font-bold mb-4">Minima sunt at nulla tenetur,?</p>
-            <p class="text-gray-500">
-              Numquam unde quod modi magnam ab deserunt ipsam sint aliquid
-              dolores libero repellendus cupiditate mollitia quidem dolorem odit
+            <p class="font-bold mb-4 text-6xl">97%</p>
+            <p class="text-gray-500 text-2xl">
+              Mahasiswa menyadari pentingnya kemampuan non akademis untuk
+              meningkatkan daya saing.
             </p>
           </div>
           <div class="mb-12">
-            <p class="font-bold mb-4">
-              Distinctio corporis, iure facere ducimus?
-            </p>
-            <p class="text-gray-500">
-              Eaque eos corrupti debitis tenetur repellat, beatae quibusdam
-              incidunt, fuga non iste dignissimos officiis nam officia obcaecati
-              commodi ratione qui nesciunt.
+            <p class="font-bold mb-4 text-6xl">25%</p>
+            <p class="text-gray-500 text-2xl">
+              Pelajar di Indonesia yang memiliki akses bimbingan karir.
             </p>
           </div>
         </div>
@@ -413,12 +460,12 @@
           <div class="relative block bg-white rounded-lg shadow-lg">
             <div class="flex">
               <div
-                class="relative overflow-hidden bg-no-repeat bg-cover relative overflow-hidden bg-no-repeat bg-cover shadow-lg rounded-lg mx-4 -mt-4"
+                class="relative overflow-hidden bg-no-repeat bg-cover shadow-lg rounded-lg mx-4 -mt-4"
                 data-mdb-ripple="true"
                 data-mdb-ripple-color="light"
               >
                 <img
-                  src="https://mdbcdn.b-cdn.net/img/new/standard/city/024.webp"
+                  src="https://media.istockphoto.com/photos/coming-soon-green-arrow-highway-road-sign-picture-id532054010?k=6&m=532054010&s=170667a&w=0&h=dQxfCYhWizcgCRNUnhBYMF7luVBdy7GRD7NxOxtXVho="
                   class="w-full"
                 />
                 <a href="#!">
@@ -430,105 +477,18 @@
               </div>
             </div>
             <div class="p-6">
-              <h5 class="font-bold text-lg mb-3">My paradise</h5>
+              <h5 class="font-bold text-lg mb-3">Akan Datang</h5>
               <p class="text-gray-500 mb-4">
                 <small
-                  >Published <u>13.01.2022</u> by
-                  <a href="" class="text-gray-900">Anna Maria Doe</a></small
+                  >Published <u>01.01.1970</u> by
+                  <a href="" class="text-gray-900">Author</a></small
                 >
               </p>
               <p class="mb-4 pb-2">
-                Ut pretium ultricies dignissim. Sed sit amet mi eget urna
-                placerat vulputate. Ut vulputate est non quam dignissim
-                elementum. Donec a ullamcorper diam.
-              </p>
-              <a
-                href="#!"
-                data-mdb-ripple="true"
-                data-mdb-ripple-color="light"
-                class="inline-block px-6 py-2.5 bg-primary text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-primary-dark hover:shadow-lg focus:bg-secondary focus:shadow-lg focus:outline-none focus:ring-0 active:bg-secondary active:shadow-lg transition duration-150 ease-in-out"
-                >Read more</a
-              >
-            </div>
-          </div>
-        </div>
-
-        <div class="mb-6 lg:mb-0" data-aos="flip-up" data-aos-delay="150">
-          <div class="relative block bg-white rounded-lg shadow-lg">
-            <div class="flex">
-              <div
-                class="relative overflow-hidden bg-no-repeat bg-cover relative overflow-hidden bg-no-repeat bg-cover shadow-lg rounded-lg mx-4 -mt-4"
-                data-mdb-ripple="true"
-                data-mdb-ripple-color="light"
-              >
-                <img
-                  src="https://mdbcdn.b-cdn.net/img/new/standard/city/031.webp"
-                  class="w-full"
-                />
-                <a href="#!">
-                  <div
-                    class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed opacity-0 hover:opacity-100 transition duration-300 ease-in-out"
-                    style="background-color: rgba(251, 251, 251, 0.15)"
-                  ></div>
-                </a>
-              </div>
-            </div>
-            <div class="p-6">
-              <h5 class="font-bold text-lg mb-3">Travel to Italy</h5>
-              <p class="text-gray-500 mb-4">
-                <small
-                  >Published <u>12.01.2022</u> by
-                  <a href="" class="text-gray-900">Halley Frank</a></small
-                >
-              </p>
-              <p class="mb-4 pb-2">
-                Suspendisse in volutpat massa. Nulla facilisi. Sed aliquet diam
-                orci, nec ornare metus semper sed. Integer volutpat ornare erat
-                sit amet rutrum.
-              </p>
-              <a
-                href="#!"
-                data-mdb-ripple="true"
-                data-mdb-ripple-color="light"
-                class="inline-block px-6 py-2.5 bg-primary text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-primary-dark hover:shadow-lg focus:bg-secondary focus:shadow-lg focus:outline-none focus:ring-0 active:bg-secondary active:shadow-lg transition duration-150 ease-in-out"
-                >Read more</a
-              >
-            </div>
-          </div>
-        </div>
-
-        <div class="mb-0" data-aos="flip-up" data-aos-delay="300">
-          <div class="relative block bg-white rounded-lg shadow-lg">
-            <div class="flex">
-              <div
-                class="relative overflow-hidden bg-no-repeat bg-cover relative overflow-hidden bg-no-repeat bg-cover shadow-lg rounded-lg mx-4 -mt-4"
-                data-mdb-ripple="true"
-                data-mdb-ripple-color="light"
-              >
-                <img
-                  src="https://mdbcdn.b-cdn.net/img/new/standard/city/081.webp"
-                  class="w-full"
-                />
-                <a href="#!">
-                  <div
-                    class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed opacity-0 hover:opacity-100 transition duration-300 ease-in-out"
-                    style="background-color: rgba(251, 251, 251, 0.15)"
-                  ></div>
-                </a>
-              </div>
-            </div>
-            <div class="p-6">
-              <h5 class="font-bold text-lg mb-3">Chasing the sun</h5>
-              <p class="text-gray-500 mb-4">
-                <small
-                  >Published <u>10.01.2022</u> by
-                  <a href="" class="text-gray-900">Joe Svan</a></small
-                >
-              </p>
-              <p class="mb-4 pb-2">
-                Curabitur tristique, mi a mollis sagittis, metus felis mattis
-                arcu, non vehicula nisl dui quis diam. Mauris ut risus eget
-                massa volutpat feugiat. Donec.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Nesciunt sit, doloribus ex harum, aperiam aspernatur delectus et
+                possimus tenetur numquam minus! Est sed, fuga iusto molestias
+                necessitatibus delectus asperiores corporis?
               </p>
               <a
                 href="#!"
