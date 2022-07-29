@@ -96,6 +96,16 @@
           </a>
         </div>
       </div> -->
+      <RouterLink
+        to="/home"
+        class="flex space-x-2 justify-center mt-0 hover:scale-110 transition-all duration-150"
+      >
+        <a
+          class="inline-block px-6 py-2.5 border-white border-2 text-white font-bold text-sm leading-tight uppercase rounded shadow-md hover:bg-black hover:bg-opacity-10 hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out"
+        >
+          CONNECT
+        </a>
+      </RouterLink>
       <div
         class="flex flex-row gap-4 fixed bottom-4 left-0 w-screen justify-center"
       >

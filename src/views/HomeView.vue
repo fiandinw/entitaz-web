@@ -18,6 +18,10 @@
   import dzulya from "../assets/members/dzulya.png";
   import nabila from "../assets/members/nabila.png";
 
+  import bannermain from "../assets/dynamic/bannermain.webp";
+  import banners1 from "../assets/dynamic/bannersession1.png";
+  import banners2 from "../assets/dynamic/bannersession2.png";
+
   AOS.init({
     offset: 200,
     duration: 500,
@@ -77,14 +81,14 @@
                 Connecting Your Dream
                 <span class="text-primary">To Reality.</span>
               </h1>
-              <RouterLink
-                to="/"
+              <a
                 class="inline-block px-7 py-3 mb-2 md:mb-0 md:mr-2 bg-primary text-white font-medium text-sm leading-snug uppercase rounded shadow-md hover:bg-primary-dark hover:shadow-lg focus:bg-primary-dark focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
                 data-mdb-ripple="true"
                 data-mdb-ripple-color="light"
-                href=""
+                href="https://s.id/DaftarEntitalk1"
+                target="_blank"
                 role="button"
-                >Get started</RouterLink
+                >Get started</a
               >
               <a
                 class="inline-block px-7 py-3 bg-transparent text-primary font-medium text-sm leading-snug uppercase rounded hover:text-secobg-primary-dark hover:bg-gray-100 focus:bg-gray-100 focus:outline-none focus:ring-0 active:bg-gray-200 transition duration-150 ease-in-out"
@@ -96,13 +100,22 @@
               >
             </div>
           </div>
-          <div class="md:mb-12 lg:mb-0">
+          <a
+            href="https://s.id/DaftarEntitalk1"
+            target="_blank"
+            class="md:mb-12 lg:mb-0"
+          >
             <img
-              src="https://images.unsplash.com/photo-1495539406979-bf61750d38ad?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+              :src="bannermain"
               class="object-cover rounded-lg shadow-lg w-[600px] h-[800px]"
               alt="landing hero"
             />
-          </div>
+            <!-- <img
+              src="https://images.unsplash.com/photo-1495539406979-bf61750d38ad?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+              class="object-cover rounded-lg shadow-lg w-[600px] h-[800px]"
+              alt="landing hero"
+            /> -->
+          </a>
         </div>
       </div>
     </div>
@@ -148,7 +161,7 @@
               data-bs-slide-to="1"
               aria-label="Slide 2"
             ></button>
-            <button
+            <!-- <button
               type="button"
               data-bs-target="#carouselExampleCaptions"
               data-bs-slide-to="2"
@@ -159,15 +172,15 @@
               data-bs-target="#carouselExampleCaptions"
               data-bs-slide-to="3"
               aria-label="Slide 4"
-            ></button>
+            ></button> -->
           </div>
           <div class="carousel-inner relative w-full overflow-hidden">
-            <div class="carousel-item active relative float-left w-full">
-              <img
-                src="https://picsum.photos/500/125"
-                class="block w-full"
-                alt="..."
-              />
+            <a
+              href="https://s.id/DaftarEntitalk1"
+              target="_blank"
+              class="carousel-item active relative float-left w-full"
+            >
+              <img :src="banners1" class="block w-full" alt="..." />
               <!-- <div
                 class="carousel-caption hidden md:block absolute text-center"
               >
@@ -176,13 +189,13 @@
                   Some representative placeholder content for the first slide.
                 </p>
               </div> -->
-            </div>
-            <div class="carousel-item relative float-left w-full">
-              <img
-                src="https://picsum.photos/500/125"
-                class="block w-full"
-                alt="..."
-              />
+            </a>
+            <a
+              href="https://s.id/DaftarEntitalk1"
+              target="_blank"
+              class="carousel-item relative float-left w-full"
+            >
+              <img :src="banners2" class="block w-full" alt="..." />
               <!-- <div
                 class="carousel-caption hidden md:block absolute text-center"
               >
@@ -191,37 +204,7 @@
                   Some representative placeholder content for the second slide.
                 </p>
               </div> -->
-            </div>
-            <div class="carousel-item relative float-left w-full">
-              <img
-                src="https://picsum.photos/500/125"
-                class="block w-full"
-                alt="..."
-              />
-              <!-- <div
-                class="carousel-caption hidden md:block absolute text-center"
-              >
-                <h5 class="text-xl">Third slide label</h5>
-                <p>
-                  Some representative placeholder content for the third slide.
-                </p>
-              </div> -->
-            </div>
-            <div class="carousel-item relative float-left w-full">
-              <img
-                src="https://picsum.photos/500/125"
-                class="block w-full"
-                alt="..."
-              />
-              <!-- <div
-                class="carousel-caption hidden md:block absolute text-center"
-              >
-                <h5 class="text-xl">Third slide label</h5>
-                <p>
-                  Some representative placeholder content for the third slide.
-                </p>
-              </div> -->
-            </div>
+            </a>
           </div>
           <button
             class="carousel-control-prev absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0"
