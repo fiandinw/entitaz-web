@@ -19,7 +19,7 @@
     </div>
     <h5 class="text-lg font-bold mb-4 capitalize">{{ $props.name }}</h5>
     <p class="mb-6">{{ $props.role }}</p>
-    <ul class="list-inside flex mx-auto justify-center">
+    <!-- <ul class="list-inside flex mx-auto justify-center">
       <a href="#!" class="px-2">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -56,6 +56,6 @@
           />
         </svg>
       </a>
-    </ul>
+    </ul> -->
   </div>
 </template>
