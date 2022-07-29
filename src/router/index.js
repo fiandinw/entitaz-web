@@ -3,6 +3,7 @@ import HomeView from "../views/HomeView.vue";
 import CountdownView from "../views/CountdownView.vue";
 import CommingSoonView from "../views/CommingSoonView.vue";
 import ErrorView from "../views/ErrorView.vue";
+import ArticleView from "../views/ArticleView.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -21,6 +22,11 @@ const router = createRouter({
       path: "/soon",
       name: "commingsoon",
       component: CommingSoonView,
+    },
+    {
+      path: "/article/1",
+      name: "article1",
+      component: ArticleView,
     },
     {
       path: "/:pathMatch(.*)*",

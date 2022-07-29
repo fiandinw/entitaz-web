@@ -1,5 +1,5 @@
 <script setup>
-import LogoEntitaz from "../assets/logo-entitaz.png";
+  import LogoEntitaz from "../assets/logo-entitaz.png";
 </script>
 <template>
   <nav
@@ -78,8 +78,7 @@ import LogoEntitaz from "../assets/logo-entitaz.png";
       <!-- Collapsible wrapper -->
 
       <!-- Right elements -->
-      <div v-if="$route.path != '/home'" class="flex items-center relative">
-        <!-- Icon -->
+      <!-- <div v-if="$route.path != '/home'" class="flex items-center relative">
         <a
           class="text-gray-500 hover:text-gray-700 focus:text-gray-700 mr-4"
           href="#"
@@ -200,7 +199,7 @@ import LogoEntitaz from "../assets/logo-entitaz.png";
             </li>
           </ul>
         </div>
-      </div>
+      </div> -->
       <!-- Right elements -->
     </div>
   </nav>
