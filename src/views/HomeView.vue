@@ -6,6 +6,7 @@
   import { RouterLink } from "vue-router";
   import TeamCard from "../components/TeamCard.vue";
   import ScrollUpButton from "../components/ScrollUpButton.vue";
+  import { Icon } from "@iconify/vue";
 
   import syarifah from "../assets/members/syarifah.png";
   import rizky from "../assets/members/rizky.png";
@@ -22,6 +23,7 @@
   import banners1 from "../assets/dynamic/bannersession1.png";
   import banners2 from "../assets/dynamic/bannersession2.png";
   import article1 from "../assets/dynamic/article1.png";
+  import article2 from "../assets/dynamic/article2.png";
 
   AOS.init({
     offset: 200,
@@ -459,18 +461,70 @@
             </div>
             <div class="p-6">
               <h5 class="font-bold text-lg mb-3">Karir Starter Pack</h5>
-              <p class="text-gray-500 mb-4">
+              <!-- <p class="text-gray-500 mb-4">
                 <small
                   >Published <u>01.01.1970</u> by
                   <a href="" class="text-gray-900">Entitaz</a></small
                 >
-              </p>
+              </p> -->
               <p class="mb-4 pb-2">
                 Apa Saja Yang Perlu Disiapkan Dalam Menghadapi Dunia Kerja
                 Khususnya Magang
               </p>
               <RouterLink
                 :to="{ name: 'article1' }"
+                data-mdb-ripple="true"
+                data-mdb-ripple-color="light"
+                class="inline-block px-6 py-2.5 bg-primary text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-primary-dark hover:shadow-lg focus:bg-secondary focus:shadow-lg focus:outline-none focus:ring-0 active:bg-secondary active:shadow-lg transition duration-150 ease-in-out"
+                >Read more</RouterLink
+              >
+            </div>
+          </div>
+        </div>
+        <div class="mb-6 lg:mb-0" data-aos="flip-up">
+          <div class="relative block bg-white rounded-lg shadow-lg">
+            <div class="flex justify-center">
+              <div
+                class="relative overflow-hidden bg-no-repeat bg-cover shadow-lg rounded-lg mx-4 -mt-4"
+                data-mdb-ripple="true"
+                data-mdb-ripple-color="light"
+              >
+                <img :src="article2" class="h-80" />
+                <RouterLink :to="{ name: 'article2' }">
+                  <div
+                    class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed opacity-0 hover:opacity-100 transition duration-300 ease-in-out"
+                    style="background-color: rgba(251, 251, 251, 0.15)"
+                  ></div>
+                </RouterLink>
+              </div>
+            </div>
+            <div class="p-6">
+              <h5 class="font-bold text-lg mb-3">
+                Di ghosting sama perusahaan?
+              </h5>
+              <!-- <p class="text-gray-500 mb-4">
+                <small
+                  >Published <u>01.01.1970</u> by
+                  <a href="" class="text-gray-900">Entitaz</a></small
+                >
+              </p> -->
+              <p class="mb-4 pb-2">
+                Mungkin ini alasannya !<br />
+                <Icon
+                  class="inline-block text-2xl"
+                  icon="emojione:backhand-index-pointing-down-medium-light-skin-tone"
+                />
+                <Icon
+                  class="inline-block text-2xl"
+                  icon="emojione:backhand-index-pointing-down-medium-light-skin-tone"
+                />
+                <Icon
+                  class="inline-block text-2xl"
+                  icon="emojione:backhand-index-pointing-down-medium-light-skin-tone"
+                />
+              </p>
+              <RouterLink
+                :to="{ name: 'article2' }"
                 data-mdb-ripple="true"
                 data-mdb-ripple-color="light"
                 class="inline-block px-6 py-2.5 bg-primary text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-primary-dark hover:shadow-lg focus:bg-secondary focus:shadow-lg focus:outline-none focus:ring-0 active:bg-secondary active:shadow-lg transition duration-150 ease-in-out"
